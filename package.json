@@ -1,0 +1,25 @@
+{
+  "name": "portfolio3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "readme_builder.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b0rgbart3/portfolio3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b0rgbart3/portfolio3/issues"
+  },
+  "homepage": "https://github.com/b0rgbart3/portfolio3#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "inquirer": "^7.3.3",
+    "util": "^0.12.3"
+  }
+}
