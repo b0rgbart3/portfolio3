@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap');
+
+/* Mobile Styles */
+html {
+    background-color:black;
+}
+body {
+    background-color:white;
+    color:black;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.framer {
+    width:100%;
+    position: relative;
+    display:block;
+    padding-left:40px;
+    box-sizing: border-box;
+}
+.logotype {
+    font-family: Goudy;
+    font-size:3.5em;
+    letter-spacing:-.01em;
+    padding-top:70px;
+}
+
+.tagline {
+    font-family: Goudy;
+    font-size:1em;
+   padding-left:4px;
+   font-size:1.8em;
+   line-height:.9em;
+   padding-bottom:18px;
+   box-sizing: border-box;
+}
+.rightColumn {
+    background-color:gray;
+    width:100%;
+    position: relative;
+    min-height:400px;
+    padding-left:40px;
+    padding-top:40px;
+    box-sizing: border-box;
+}
+
+.portContainer {
+    width:100%;
+    border:8px solid blue;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.project {
+    width:30%;
+    max-width:350px;
+    min-width:290px;
+    height:300px;
+    border:4px solid gray;
+    box-sizing: border-box;
+    display:inline-block;
+}
+
+/* Styles for Larger screens */
+@media only screen and (min-width:700px) {
+
+    .framer {
+        width:calc(100% - 200px);
+        position: relative;
+        display:block;
+        padding-left:40px;
+        box-sizing: border-box;
+    }
+
+    .rightColumn {
+        background-color:gray;
+        width:200px;
+        position: absolute;
+        height: 100vh;
+        right:0;
+        top:0;
+        
+    }
+}
+
