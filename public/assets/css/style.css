@@ -25,7 +25,7 @@ body {
     display:block;
     box-sizing: border-box;
     text-align: center;
-
+    padding-bottom:200px;
 }
 .banner {
     height:200px;

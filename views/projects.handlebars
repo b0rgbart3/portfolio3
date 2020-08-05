@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="assets/css/bio_style.css">
+<link rel="stylesheet" type="text/css" href="assets/css/projects_style.css">
+<div class='framer group'>
+    <div class='banner' id='banner'>
+    </div>
+    <div class='logoContainer' id="logoContainer">
+    <div class='logotype' id='logotype'>Bart<span class='leadingForBart'></span>Dority</div>
+    </div>
+        <div class='tagline'>Full Stack Web Developer / Software Engineer</div>
+</div>
+
+ <div class='work group' id="work">
+        <h1>Projects</h1>
+
+        {{#each projects}}
+        <div class='project group' id="{{id}}"><img src="{{ image }}" />
+            <div class='projectInfo'>
+                <div class='closer'></div>
+                <p class='projectTitle'> {{ title }}</p>
+                <p>{{ description }}</p>
+                <div class="links">
+                    <a href="{{ github }}" class='live'>Live Demo</a>
+                    <a href="{{ live }}" class='live githubLink'>github repo</a>
+               
+                </div>
+            </div>
+        </div>
+
+  {{/each}}
+</div>
+    <div class='menuContainer'>
+    <div class='mainMenu' id="mainMenu">
+        <div class='menuTitle' id="menuTitle">//</div>
+        <ul class='menu' id="menu">
+            <li class='' id='homeLink'>/</li>
+            <li class='' id='bioLink'>/ Bio</li>
+            <li class='' id='projectsLink'>/ Projects</li>
+            <li class='' id='githubLink'>/ Github</li>
+            <li class='' id='linked-inLink'>/ Linked-In</li>
+        </ul>
+    </div>
+    </div>
+
+<div class='rightColumn group'>Stuff in here</div>
+
+
+  <script>
+    $(document).ready(function() { 
+
+    $("#logoContainer").on("click", function(event) {
+        event.preventDefault();
+        event.stopPropagation();
+        window.location.replace("/");
+    });
+    });
+</script>
+
+    	<script src="assets/js/projects.js"></script>

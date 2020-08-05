@@ -38,6 +38,7 @@ $(document).ready(function() {
             );
             break;
             case "projectsLink": 
+              window.location.replace("/projects");
             break;
             case "resumeLink": 
             break;
