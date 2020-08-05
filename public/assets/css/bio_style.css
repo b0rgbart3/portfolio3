@@ -24,27 +24,24 @@ body {
     position: relative;
     display:block;
     box-sizing: border-box;
-    text-align: center;
 
 }
 .banner {
-    height:200px;
+    height:20px;
     transition:all .5s;
 }
 
-.banner_pos2 {
-    height:20px;
-}
+
 .logoContainer {
-    
-    display:inline-block;
-    position:relative;
+
     transition: all 2s;
     left:0;
+    padding-top:48px;
+    display:inline-block;
 }
 .logotype {
     font-family: Goudy;
-    font-size:3.5em;
+    font-size:3em;
     letter-spacing:-.01em;
     padding-top:10px;
     font-family: 'Rubik', serif;
@@ -62,7 +59,7 @@ body {
     box-sizing: border-box;
     border-bottom:4px solid white;
     transition:all .25s;
-    position:relative;
+    
 }
 
 .logotype:hover {
@@ -77,17 +74,18 @@ body {
 
 .tagline {
     font-family: Goudy;
-    font-size:1.2em;
-   padding-left:4px;
+    font-size:1em;
+   padding-left:14px;
    line-height:.9em;
-   padding-top:18px;
+   padding-top:10px;
    box-sizing: border-box;
    font-family: 'Rubik', serif;
    font-weight: 200;
    text-transform: lowercase;
    padding-bottom:40px;
-  
+   display:block;
    box-sizing: border-box;
+  
 }
 .rightColumn {
     background-color:gray;
@@ -100,9 +98,13 @@ body {
 
 }
 
+.intro {
+    padding-left:20px;
+    padding-right:20px;
+}
 .portContainer {
     width:100%;
-    border:8px solid blue;
+  
     box-sizing: border-box;
     text-align: center;
 }
@@ -127,7 +129,9 @@ body {
  
 }
 .menuContainer {
-
+    position: absolute;
+    top:0;
+    right:0;
 }
 .menuTitle {
     width:100%;
@@ -218,8 +222,8 @@ body {
         width:calc(100% - 200px);
         position: relative;
         display:block;
-       
         box-sizing: border-box;
+       
     }
 
     .rightColumn {
@@ -229,7 +233,7 @@ body {
         height: 100vh;
         right:0;
         top:0;
-        
+   
     }
 }
 

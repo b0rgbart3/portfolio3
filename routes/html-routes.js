@@ -10,6 +10,9 @@ var fs = require('fs');
     app.get("/", function(req, res) {
         res.render("index");
     });
+    app.get("/bio", function(req, res) {
+        res.render("bio");
+    });
 }
 
 module.exports = htmlRouter;
