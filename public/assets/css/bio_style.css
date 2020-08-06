@@ -7,9 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Mobile Styles */
-html {
- 
-}
+
 body {
 
     color:black;
@@ -37,12 +35,12 @@ body {
 
     transition: all 2s;
     left:0;
-    padding-top:48px;
+    padding-top:28px;
     display:inline-block;
 }
 .logotype {
     font-family: Goudy;
-    font-size:3em;
+    font-size:2em;
     letter-spacing:-.01em;
     padding-top:10px;
     font-family: 'Rubik', serif;
