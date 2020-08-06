@@ -5,6 +5,7 @@ var express = require("express");
 var path = require("path");
 var fs = require('fs');
 
+
 var projects = [
 
     {
@@ -51,7 +52,11 @@ var projects = [
     app.get("/bio", function(req, res) {
         res.render("bio");
     });    
-    app.get("/", function(req, res) {
+    app.get("/resume", function(req, res) {
+        res.sendFile(path.join(__dirname, "assets/images/BARTDORITYresume.pdf"));
+
+    }); 
+    app.get("/*", function(req, res) {
         res.render("index");
     });
 }

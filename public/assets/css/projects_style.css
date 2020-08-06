@@ -1,22 +1,26 @@
-
+.subtitle {
+    font-family: "Rubik", serif;
+    font-size:2em;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: left;
+    margin:0;
+    padding-left:36px;
+    display:block;
+    padding-top:0;
+    line-height: 1em;
+    padding-bottom:30px;
+}
 .work {
     width:100%;
-    
+    margin:0;
+    padding:0;
     box-sizing: border-box;
     position: relative;
     text-align: center;
+
 }
-h1 {
-    font-family: 'Rubik', serif;
-    font-size:4em;
-    text-transform: uppercase;
-    font-weight: 200;
-    margin:0;
-    padding:0;
-    padding-left:8px;
-    padding-top:18px;
-    text-align: left;
-}
+
 .project {
     width:280px;
     background-color:gray;
@@ -121,43 +125,8 @@ h1 {
 .live:hover {
     background-color:#253254;
 }
-.icon {
-    width:60px;
-    height:60px;
-    background-size:60px 60px;
-    background-repeat: no-repeat;
-    display:inline-block;
-    float:left;
-    cursor: pointer;
-    opacity:.5;
-    transition: all .25s;
-}
 
-.icon:hover {
-    opacity:1;
-}
-.github {
-    background-image:url('../images/interface/github_round.svg');
-}
 
-.github:hover {
-    background-image:url('../images/interface/github_round_hi.svg');
-}
-
-.pdf {
-   background-image:url('../images/interface/pdf.png');
-}
-
-.pdf:hover {
-    background-image:url('../images/interface/pdf_hi.png');
-}
-
-.linkedin {
-    background-image:url('../images/interface/linked_in_black.svg');
-}
-.linkedin:hover {
-    background-image:url('../images/interface/linked_in_hi.svg');
-}
 
 .bdCard {
     width:100%;
@@ -179,9 +148,7 @@ h1 {
 
 /* Styles for Larger screens */
 @media only screen and (min-width:700px) {
- .work {
-     width:calc(100% - 200px);
- }
+
  .framer {
     width:calc(100% - 200px);
 

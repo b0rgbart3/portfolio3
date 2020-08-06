@@ -213,53 +213,6 @@ body {
 }
 
 
-.icon {
-    width:60px;
-    height:60px;
-    background-size:60px 60px;
-    background-repeat: no-repeat;
-    display:inline-block;
-    float:left;
-    cursor: pointer;
-    opacity:.5;
-    transition: all .25s;
-}
-
-.icon:hover {
-    opacity:1;
-}
-.github {
-    background-image:url('../images/interface/github_round.svg');
-}
-
-.github:hover {
-    background-image:url('../images/interface/github_round_hi.svg');
-}
-
-.email {
-    background-image:url('../images/interface/email.svg');
-}
-.email:hover {
-    background-image:url('../images/interface/email_hi.svg');
-}
-
-
-
-.pdf {
-   background-image:url('../images/interface/pdf.png');
-}
-
-.pdf:hover {
-    background-image:url('../images/interface/pdf_hi.png');
-}
-
-.linkedin {
-    background-image:url('../images/interface/linked_in_black.svg');
-}
-.linkedin:hover {
-    background-image:url('../images/interface/linked_in_hi.svg');
-}
-
 
 /* Styles for Larger screens */
 @media only screen and (min-width:700px) {
@@ -281,9 +234,6 @@ body {
         top:0;
         
     }
-    .icon {
-        width:120px;
-        height:120px;
-    }
+
 }
 

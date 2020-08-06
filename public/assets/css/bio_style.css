@@ -18,12 +18,13 @@ body {
 }
 
 .framer {
+
     width:100%;
     position: relative;
     display:block;
     box-sizing: border-box;
     background-color:white;
-   
+    padding-top:0;
 }
 .banner {
     height:20px;
@@ -32,17 +33,18 @@ body {
 
 
 .logoContainer {
-
     transition: all 2s;
-    left:0;
-    padding-top:28px;
+    left:20px;
+    padding:0;
+    margin:0;
     display:inline-block;
+
+    position: relative;
 }
 .logotype {
     font-family: Goudy;
     font-size:2em;
     letter-spacing:-.01em;
-    padding-top:10px;
     font-family: 'Rubik', serif;
     font-weight: 500;
     /* font-family: 'Montserrat', serif; */
@@ -53,16 +55,17 @@ body {
     user-select: none;
     cursor: pointer;
     display:inline-block;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:20px;
+    padding-right:20px;
     box-sizing: border-box;
-    border-bottom:4px solid white;
     transition:all .25s;
+    padding-top:34px;
+    padding-bottom:20px;
     
 }
 
 .logotype:hover {
-    border-bottom:4px solid cyan;
+    background-color:cyan;
 }
 .leadingForBart {
     width:100px;
@@ -72,18 +75,12 @@ body {
 }
 
 .tagline {
-    font-family: Goudy;
     font-size:1em;
-   padding-left:14px;
-   line-height:.9em;
-   padding-top:10px;
    box-sizing: border-box;
    font-family: 'Rubik', serif;
-   font-weight: 200;
-   text-transform: lowercase;
-   padding-bottom:0px;
-   display:block;
-   box-sizing: border-box;
+   font-weight: 700;
+    color:black;
+    padding-bottom:20px;
   
 }
 
@@ -108,15 +105,17 @@ body {
 
 .intro {
     padding-left:4%;
-    padding-right:6%;
+    padding-right:8%;
+    padding-top:40px;
     background-color:white;
     display:block;
     box-sizing: border-box;
-    padding-top:42px;
     width:100%;
     position: relative;
     padding-bottom:100px;
     line-height: 1.5em;
+    vertical-align: top;
+ 
     
 }
 .portContainer {
@@ -145,10 +144,9 @@ body {
 .menuTitle {
     width:100%;
     background-color:rgb(160, 188, 197);
-    height:60px;
-    padding:8px;
+    padding:18px;
     padding-left:20px;
-    padding-bottom:0;
+    padding-bottom:14px;
     box-sizing:border-box;
     font-weight: 900;
     font-family: 'Rubik', serif;
@@ -156,6 +154,8 @@ body {
     text-align: left;
     user-select: none;
     cursor: pointer;
+    position: relative;
+    left:200px;
 }
 .menuTitle:hover {
     background-color:cyan;
@@ -229,52 +229,6 @@ body {
 }
 
 
-.icon {
-    width:60px;
-    height:60px;
-    background-size:60px 60px;
-    background-repeat: no-repeat;
-    display:inline-block;
-    float:left;
-    cursor: pointer;
-    opacity:.5;
-    transition: all .25s;
-}
-
-.icon:hover {
-    opacity:1;
-}
-.github {
-    background-image:url('../images/interface/github_round.svg');
-}
-
-.github:hover {
-    background-image:url('../images/interface/github_round_hi.svg');
-}
-
-.email {
-    background-image:url('../images/interface/email.svg');
-}
-.email:hover {
-    background-image:url('../images/interface/email_hi.svg');
-}
-
-
-
-.pdf {
-   background-image:url('../images/interface/pdf.png');
-}
-
-.pdf:hover {
-    background-image:url('../images/interface/pdf_hi.png');
-}
-
-.linkedin {
-    background-image:url('../images/interface/linked_in_black.svg');
-}
-.linkedin:hover {
-    background-image:url('../images/interface/linked_in_hi.svg');
-}
 
 
 /* Styles for Larger screens */
@@ -289,11 +243,13 @@ body {
     }
 
     .headshot {
-        width:30%;
+        width:33%;
+        max-width:300px;
         background-repeat: no-repeat;
-   
         background-position:50% 0%;
         margin-left:20px;
+     
+        display:inline-block;
     }
 
     .rightColumn {
@@ -308,28 +264,22 @@ body {
     }
 
     .intro {
-        padding-left:20px;
-        padding-right:20px;
-        background-color:rgba(255,255,255,.85);
         display:inline-block;
-        box-sizing: border-box;
-        padding-top:12px;
         width:60%;
-    
-        position: absolute;
-        top:240px;
-        right:6%;
-   
+        box-sizing:border-box;
+        padding-top:0;
     }
+
+
     .menuContainer {
         position: absolute;
         top:0;
         right:200px;
     }
 
-    .icon {
-        width:120px;
-        height:120px;
+
+    .menuTitle {
+        left:0;
     }
 }
 
