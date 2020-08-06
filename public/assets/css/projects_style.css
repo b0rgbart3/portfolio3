@@ -1,7 +1,7 @@
 
 .work {
     width:100%;
-    border:12px solid green;
+    
     box-sizing: border-box;
     position: relative;
     text-align: center;
@@ -172,7 +172,7 @@ h1 {
 }
 
 .slideUp {
-    top:-320px;
+    top:-280px;
     height:400px;
     padding-top:40px;
 }
@@ -182,4 +182,12 @@ h1 {
  .work {
      width:calc(100% - 200px);
  }
+ .framer {
+    width:calc(100% - 200px);
+
+ }
+ .icon {
+    width:120px;
+    height:120px;
+}
 }

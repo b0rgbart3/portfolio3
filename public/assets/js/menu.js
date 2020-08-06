@@ -3,6 +3,7 @@ $(document).ready(function() {
     var menuTitle = $("#menuTitle");
     var menu = $("#menu");
  
+    // Start out with the menu compressed
     toggleMenu();
     menuTitle.on("click", function(event) { event.stopPropagation(); toggleMenu(); });
 
@@ -24,15 +25,12 @@ $(document).ready(function() {
                 break;
             case "bioLink": 
             console.log('ajax call:');
+
+            // Could potentially load my bio from the server side or from db
             $.ajax({
                 method: "GET",
                 url: "/api/bio"
                 }).then( function(bioData) {
-                    // console.log("Data returned: " + JSON.stringify(bioData));
-                    // closeMenu();
-                    // moveToPosition2();
-                    // $("#bio").text(bioData.bio );
-
                    window.location.replace("/bio");
                 }
             );
@@ -40,11 +38,17 @@ $(document).ready(function() {
             case "projectsLink": 
               window.location.replace("/projects");
             break;
-            case "resumeLink": 
-            break;
             case "githubLink": 
+            closeMenuGracefully( function() {
+                window.open("https://github.com/b0rgbart3");
+            });
+           
             break;
             case "linked-inLink": 
+            closeMenuGracefully( function() {
+                window.open("https://www.linkedin.com/in/bart-dority/");
+            });
+           
             break;
 
             default:break;
@@ -65,6 +69,11 @@ var toggleMenu=function() {
 var closeMenu=function() {
     $("#menu li").addClass("hiddenLi");
    
+}
+
+var closeMenuGracefully= function(cb) {
+    $("#menu li").addClass("hiddenLi");
+    cb();
 }
 
 var moveToPosition2=function() {

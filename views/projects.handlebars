@@ -7,7 +7,6 @@
     <div class='logotype' id='logotype'>Bart<span class='leadingForBart'></span>Dority</div>
     </div>
         <div class='tagline'>Full Stack Web Developer / Software Engineer</div>
-</div>
 
  <div class='work group' id="work">
         <h1>Projects</h1>
@@ -19,7 +18,7 @@
                 <p class='projectTitle'> {{ title }}</p>
                 <p>{{ description }}</p>
                 <div class="links">
-                    <a href="{{ github }}" class='live'>Live Demo</a>
+                    <a href="{{ github }}" class='live' target="_blank">Live Demo</a>
                     <a href="{{ live }}" class='live githubLink'>github repo</a>
                
                 </div>
@@ -27,6 +26,7 @@
         </div>
 
   {{/each}}
+</div>
 </div>
     <div class='menuContainer'>
     <div class='mainMenu' id="mainMenu">
@@ -40,8 +40,23 @@
         </ul>
     </div>
     </div>
-
-<div class='rightColumn group'>Stuff in here</div>
+</div>
+<div class='rightColumn group'>
+            <div class='plate group' id="plate">
+        {{!-- <img src="assets/images/interface/bart_dority.png" class='logo'/> --}}
+            
+        <div class='icons group'>
+               <a href="mailto:b0rgBart3@gmail.com">
+                <div class="icon email"></div></a>
+            <a href="https://github.com/b0rgbart3" target="_blank">
+                <div class="icon github"></div></a>
+            <a href="https://www.linkedin.com/in/bart-dority/" target="_blank">
+                <div class="icon linkedin"></div></a>
+            <a href="assets/ResumeBartDority2020.pdf" target="_blank">
+                <div class="icon pdf"></div></a>
+        </div>
+    </div>
+</div>
 
 
   <script>
