@@ -53,7 +53,7 @@ var projects = [
         res.render("bio");
     });    
     app.get("/resume", function(req, res) {
-        res.sendFile(path.join(__dirname, "assets/images/BARTDORITYresume.pdf"));
+        res.sendFile(path.join(__dirname, "../public/assets/images/BARTDORITYresume.pdf"));
 
     }); 
     app.get("/*", function(req, res) {
